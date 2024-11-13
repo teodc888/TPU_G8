@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Materias a Cargo</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="./css/sb-admin-2.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/dashCss.css"> -->
+    <link rel="stylesheet" href="./css/materiasXcarrera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/GL9k4bGfPr6VxZwiHphB17R+9P19oWfHqO8KX8vY5gbyGJ0" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./docente-index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Bienvenido</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0" />
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="./docente-index.html">
+                    <i class="fa-solid fa-circle"></i>
+                    <span>Inicio</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider" />
+
+            <!-- Heading -->
+            <div class="sidebar-heading">Docente</div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>Materias</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="./materias.html">Materias a cargo</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Docentes por tribunal</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="./docentesXtribunal.html">Docente por tribunal</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTre"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Administracion</span>
+                </a>
+                <div id="collapseTre" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="./nota-alumno.html">Nota por Alumno</a>
+                    </div>
+                </div>
+                <div id="collapseTre" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Opciones</h6>
+                        <a class="collapse-item" href="./materia-alumno.html">Materia por Alumno</a>
+                        <a class="collapse-item" href="./inscripcionMateria.html">Inscribir Alumno</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="nombreUser">Usuario</span>
+                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" />
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
+                                <a class="dropdown-item" href="./docente-perfil.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Perfil
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="dashboard-header">
+                    <h1 class="text-center">Administracion</h1>
+                </div>
+                <div id="materias-container"></div>
+            </div>
+        </div>
+
+        <!-- Modal de Información del Alumno -->
+        <div class="modal fade" id="infoAlumnoModal" tabindex="-1" role="dialog" aria-labelledby="infoAlumnoModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="infoAlumnoModalLabel">Información del Alumno</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Contenido dinámico del modal -->
+                        <p><strong>Legajo:</strong> <span id="infoLegajo"></span></p>
+                        <p><strong>Nombre:</strong> <span id="infoNombre"></span></p>
+                        <p><strong>Apellido:</strong> <span id="infoApellido"></span></p>
+                        <p><strong>Tipo de Documento:</strong> <span id="infoTipoDocumento"></span></p>
+                        <p><strong>Número de Documento:</strong> <span id="infoNumeroDocumento"></span></p>
+                        <p><strong>Dirección:</strong> <span id="infoDireccion"></span></p>
+                        <p><strong>Localidad:</strong> <span id="infoLocalidad"></span></p>
+                        <p><strong>Estado Civil:</strong> <span id="infoEstadoCivil"></span></p>
+                        <p><strong>Estado Habitacional:</strong> <span id="infoEstadoHabitacional"></span></p>
+                        <p><strong>Situación Laboral:</strong> <span id="infoSituacionLaboral"></span></p>
+                        <p><strong>Fecha de Nacimiento:</strong> <span id="infoFechaNacimiento"></span></p>
+                        <p><strong>Género:</strong> <span id="infoGenero"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup para editar la nota -->
+        <div id="editNotaPopup" class="popup-overlay" style="display: none;">
+            <div class="popup-content">
+                <h3>Editar Nota</h3>
+                <label for="editNotaInput">Nueva Nota:</label>
+                <input type="number" id="editNotaInput" min="0" max="10" step="0.1" placeholder="Ingrese la nueva nota">
+                <div class="popup-buttons">
+                    <button id="cancelEditNota" class="btn btn-secondary">Salir</button>
+                    <button id="confirmEditNota" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+    <!--LOGOUT-->
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Seguro que quiere Salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Si selecciona Logout va a cerrar la session</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" onclick="logout()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/nota-alumno.js"></script>
+</body>
+
+</html>

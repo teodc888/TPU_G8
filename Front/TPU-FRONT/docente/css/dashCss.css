@@ -1,0 +1,145 @@
+.dashboard-container {
+  padding: 1.5rem;
+  background-color: #f8f9fc;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.dashboard-header h1 {
+  color: #5a5c69;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card .stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stat-card .stat-icon {
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.stat-card .stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5a5c69;
+}
+
+.stat-card .stat-label {
+  color: #858796;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.chart-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.chart-card h3 {
+  color: #5a5c69;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+.performance-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.performance-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.performance-card h4 {
+  color: #5a5c69;
+  margin-bottom: 1rem;
+}
+
+.tag-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tag.success {
+  background-color: rgba(28, 200, 138, 0.1);
+  color: #1cc88a;
+}
+
+.tag.danger {
+  background-color: rgba(231, 74, 59, 0.1);
+  color: #e74a3b;
+}
+
+@media (max-width: 768px) {
+  .charts-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .dashboard-container {
+      padding: 1rem;
+  }
+}
+
+

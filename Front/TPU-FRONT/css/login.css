@@ -1,0 +1,166 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #243b55 40%, #1d2d3f 60%);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilos para el input */
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background: rgba(36, 59, 85, 0.9);
+    padding: 0 5px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    padding-right: 40px; /* Espacio adicional para el icono */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #00f2fe;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para la contraseña con el ojo dentro del campo */
+.input-group button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centra el icono verticalmente */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.input-group button i {
+    color: #ffffff;
+    font-size: 20px; /* Ajusta el tamaño del icono */
+}
+
+/* Estilos del botón de Login */
+.btn-block {
+    width: 100%;
+}
+
+.login-button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+}
+
+/* Estilo para el enlace de "Forgot your password?" */
+.forgot-password {
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.forgot-password:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.password-olv {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .input-group label {
+        font-size: 0.85rem;
+    }
+
+    .input-group input {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+}

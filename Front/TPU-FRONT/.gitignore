@@ -1,0 +1,8 @@
+# Ignorar la carpeta .vs
+.vs/
+# Otras reglas de ignorar
+bin/
+obj/
+*.user
+*.suo
+*.sln.ide
