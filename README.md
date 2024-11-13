@@ -1,7 +1,8 @@
 # 
 <h1 alaign="center">Proyecto Integrador Programacion II</h1>
 
-![image](https://github.com/user-attachments/assets/75eb3034-5481-4545-9fe8-8e988c7916b7)
+![image](https://github.com/user-attachments/assets/cd9c6309-1a83-45c5-847c-b1f8f0974826)
+
 
 ### Integrantes
 - **Mateo DellAcqua Castro** - Legajo: 412088
